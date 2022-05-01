@@ -11,7 +11,7 @@ phases:
     on-failure: ABORT
     commands:
       - echo Build starting on ${date}
-      - Compressing src directory
+      - echo compressing src directory
       - zip -r src.zip src
 artifacts:
   files:
