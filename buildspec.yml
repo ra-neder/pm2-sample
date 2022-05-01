@@ -13,10 +13,10 @@ phases:
       - echo Build starting on ${date}
       - Compressing src directory
       - zip -r src.zip src
-  artifacts:
-    type: zip
-    files:
-      - '**/*'
-    base-directory: 'src'
-    discard-paths: no
+artifacts:
+  type: zip
+  files:
+    - '**/*'
+  base-directory: 'src'
+  discard-paths: no
 
