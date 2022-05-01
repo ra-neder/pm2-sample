@@ -18,4 +18,4 @@ artifacts:
     - '**/*'
   base-directory: 'src'
   discard-paths: no
-
+  name: pm2-sample.zip
