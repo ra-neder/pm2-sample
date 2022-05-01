@@ -1,0 +1,22 @@
+version: 0.2
+
+env:
+  variables:
+    BUCKET_NAME: "codepipeline-sample-nodejs.bucket"
+  export-variables:
+    - BUCKET_NAME
+
+phases:
+  build:
+    on-failure: ABORT
+    commands:
+      - echo Build starting on ${date}
+      - Compressing src directory
+      - zip -r src.zip src
+  artifacts:
+    type: zip
+    files:
+      - '**/*'
+    base-directory: 'src'
+    discard-paths: no
+

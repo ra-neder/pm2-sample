@@ -1,0 +1,29 @@
+{
+  "name": "VM-Deployment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd -f ./dev.env node index.js",
+    "start": "pm2 restart ./ecosystem.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IshaanOhri/VM-Deployment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IshaanOhri/VM-Deployment/issues"
+  },
+  "homepage": "https://github.com/IshaanOhri/VM-Deployment#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
