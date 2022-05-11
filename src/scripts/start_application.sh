@@ -5,7 +5,7 @@ install_pm2_start_app(){
     npm -i g pm2
     pm2 -v
 
-    pm2 start ecosystem.config.js
+    pm2 start /opt/codedeploy-agent/deployment-root/"$DEPLOYMENT_GROUP_ID"/"$DEPLOYMENT_ID"/deployment-archive/ecosystem.config.js
 }
 
 install_pm2_start_app
