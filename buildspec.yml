@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    BUCKET_NAME: "codepipeline-sample-nodejs.bucket"
+    BUCKET_NAME: "codepipeline-pm2.bucket"
   exported-variables:
     - BUCKET_NAME
 
